@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="contains">
+                <div class="todo">
+                    <img src="img\checklist (3).png" alt="">
+                    <h4>To Do List</h4>
+                </div>
+                <h2>What's the Plan for Today?</h2>
+                <div>
+                    <input type="text" id="inputt" class="input" placeholder="Add New Task">
+                    <button onclick="Addr()" class="add">Add task</button>
+                </div>
+                
+                <ul  id="list-container" class="list-container">
+                   
+                </ul>
+            </div>  
+        </section>
+    </main>
+    <script>
+        const listcontainer = document.getElementById('list-container');
+        const inputbox = document.getElementById('inputt');
+        function Addr(){
+            if(inputbox.value == ''){
+                alert("you must wrait something");
+            }
+            else{
+                let li =document.createElement("li");
+                const tt= inputbox.value;
+                li.innerHTML = `
+                                 ${tt} 
+                                 <button class="delet">Delete</button>`
+                listcontainer.appendChild(li);
+                inputt.value = "";
+            }
+
+        };
+        listcontainer.addEventListener('click', (event) => {
+
+            if(event.target.classList.contains("delet")) {
+                const li = event.target.parentElement;
+                listcontainer.removeChild(li);
+            }
+        })
+
+
+    </script>
+</body>
+</html>

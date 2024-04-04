@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8294C4;
+    background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%,rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%,rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%,rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%,rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%,rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%,rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%),linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%,rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%,rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%,rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%,rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%,rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%,rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%,rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
+}
+section{
+    min-height: 300px;
+    width: 370px;
+    background-color: #DBDFEA;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+.input{
+    height: 30px;
+    width: 260px;
+    border:solid #ffead2;
+    margin-top: 30px;
+}
+.tasks{
+    border:solid #ACB1D6;
+    margin-top: 20px;
+    height: 30px;
+}
+.add{
+    background-color: #ffead2;
+    border: none;
+    height: 35px;
+    width: 70px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 5px ;
+
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+ul li .checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul ui .checked::before{
+    background-image: url(img\radio.png);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("img\radio.png");
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    right: 8px;
+}
+.delet{
+    background-color: #B060BC;
+    color:white;
+    cursor:pointer;
+    border:none;
+    height: 35px;
+    width: 70px;
+}
+.todo{
+    display: flex;
+    margin: 20px 20px 20px 0px;
+}
+.todo h4{
+   margin-left: 10px;
+}
