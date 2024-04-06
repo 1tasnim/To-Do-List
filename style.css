@@ -81,3 +81,21 @@ ul li::before{
 .todo h4{
    margin-left: 10px;
 }
+@media screen and (max_width: 350px){
+    section{
+        min-height: 190px;
+        width: 50px;
+        padding: 0px;
+        border-radius: 30px;
+    }
+    .input{
+        height: 25px;
+        width: 240px;
+        margin-top: 25px;
+    }
+    .tasks{
+        margin-top: 20px;
+        height: 30px;
+    }
+    
+}
